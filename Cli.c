@@ -31,7 +31,7 @@ int main()
 
 	serv_addr.sin_family = AF_INET;
 	serv_addr.sin_port = htons(44440);
-	serv_addr.sin_addr.s_addr = inet_addr("192.168.100.54");
+	serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
 	len_cli = sizeof(serv_addr);
 	connect_serv = connect(socketCli, (struct sockaddr *)&serv_addr, len_cli);
